@@ -40,4 +40,4 @@ gerando_os_numeros(total_de_numeros)
 random.shuffle(senha)  #embaralha a minha lista
 senha_final = "".join(senha) #transforma minha lista em uma string
 
-print(f"Sua senha é: {senha_final}")
+print(f"A senha gerada foi: {senha_final}")
