@@ -28,7 +28,7 @@ lista_letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 lista_numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 lista_simbolos  = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-print("Welcome to the PyPassword Generator!")
+print("Welcome to the Password Generator!")
 total_de_letras= int(input("Quantas letras quer que sua senha tenha?\n")) 
 total_de_simbolos = int(input("Quantos simbolos quer que sua senha tenha \n"))
 total_de_numeros = int(input("Quantos numeros quer que sua senha tenha?\n"))
