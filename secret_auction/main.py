@@ -15,7 +15,7 @@ while True:
    verificacao = input("Existem mais pessoas para jogar? (sim) ou (nao): ")
    
    if verificacao.lower() == "sim":
-      os.system("clear")  #limpa o terminal 
+      os.system("clear")  #limpa o terminal  
       continue
    else:
       break
