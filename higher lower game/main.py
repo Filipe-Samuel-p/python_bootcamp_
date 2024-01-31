@@ -11,4 +11,8 @@ while True:
     print(f"Compare B: {data[indice2]["name"]},{data[indice2]['description']}, from {data[indice2]["country"]}")
     if data[indice]["follower_count"] > data[indice2]["follower_count"]:
         pontos += 1
+    else:
+        ...
+
+ 
         
