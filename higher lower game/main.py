@@ -4,6 +4,7 @@ import logo
 import os
 
 
+
 indice = randint(0,49)
 pontos = 0
 while True:
