@@ -1,5 +1,7 @@
-class OlaMundo:
-    ...
+class User:
+   def __init__(self,username) -> None:
+      self.id = username
 
-h = OlaMundo()
-print(h)
+user_1 = User("Filipe")
+
+print(user_1.id)
