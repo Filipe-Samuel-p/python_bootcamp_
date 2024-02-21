@@ -1,59 +1,25 @@
 from turtle import *
+import random
 
-def triangulo():
-    for i in range(3):
-        timmy_the_turtle.right(120)
-        timmy_the_turtle.forward(100)
-    
-def quadrado():
-   for i in range(4):
-    timmy_the_turtle.right(90)
-    timmy_the_turtle.forward(100) #forward é movimentar a tartaruga para a frente. e passa como argumento a distancia
 
-def pentagono():
-   for i in range(5):
-      timmy_the_turtle.right(72)
-      timmy_the_turtle.forward(100)
+def cores_aleatorias():
+   r = random.randint(0,255)
+   g = random.randint(0,255)
+   b = random.randint(0,255)
+   random_color = (r,g,b) 
+   return random_color
 
-def hexagono():
-   for i in range(6):
-      timmy_the_turtle.right(60)
-      timmy_the_turtle.forward(100)
-
-def heptagono():
-   for i in range(7):
-      timmy_the_turtle.right(51.5)
-      timmy_the_turtle.forward(100)
-
-def octgono():
-   for i in range(8):
-      timmy_the_turtle.right(45)
-      timmy_the_turtle.forward(100)
-   
-def nonagon():
-   for i in range(9):
-      timmy_the_turtle.right(40)
-      timmy_the_turtle.forward(100)
-
-def decagono():
-   for i in range(10):
-      timmy_the_turtle.right(36)
-      timmy_the_turtle.forward(100)
-
+colormode(255) #ver secao sobre cor em "pencolor" na documentação. Usa- se RGB
 timmy_the_turtle = Turtle()
-timmy_the_turtle.shape("turtle")
+timmy_the_turtle.pensize(15) #pensize aumenta a expessura da caneta da turtle
+timmy_the_turtle.speed(3)
+direcoes = [0,90,180,270]
 
-
-
-triangulo()
-quadrado()
-pentagono()
-hexagono()
-heptagono()
-octgono()
-nonagon()
-decagono()
-
+for i in range(200):
+   timmy_the_turtle.color(cores_aleatorias())
+   timmy_the_turtle.forward(30)
+   timmy_the_turtle.setheading(random.choice(direcoes)) #setheading escolhe aleatoriamente o a direcao da turtle, dai nao precisa usar os metodos right e left
+  
 
 
 
