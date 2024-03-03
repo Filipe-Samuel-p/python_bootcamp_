@@ -1,32 +1,38 @@
 from turtle import *
 import random
+import time
+from snake_lib import Cobra
+
+def snake_up():
+    setheading(0)
+
+
 
 # TELA (screen)
 title("SNAKE GAME")
 setup(width= 700, height= 600)
 bgcolor("black")
+tracer(0)
+
+#cobra
+snake = Cobra()
+snake.criacao_da_cobra()
+
+# Teclas para movimentar a cobra
+listen()
+onkey(snake.snake_up,"Up")
+onkey(snake.snake_down,"Down")
+onkey(snake.snake_left,"Left")
+onkey(snake.snake_right,"Right")
 
 
-posicao_de_x = random.randint(-330,331)
-posicao_de_y = random.randint(-280,280)
-
-
-x=0
-y=0
-cobra = []
 jogo_funcionando = True
-for i in range(4):
-    snake = Turtle(shape="square")
-    snake.color("white")
-    snake.penup()
-    snake.goto(x=x,y=y)
-    x -= 10
-    cobra.append(snake)
-
-
 while jogo_funcionando:
-    ...
+    update()
+    time.sleep(0.1)
+    snake.movimento_da_cobra()
 
+    
 
 
 
