@@ -39,7 +39,12 @@ while jogo_funcionando:
         pontos.nova_pontuacao()
         comida.nova_posicao()
 
-    
+    #colisao com a borda
+    verificacao_da_colisao = snake.cobra[0].xcor() > 340 or snake.cobra[0].xcor() < -340 or snake.cobra[0].ycor() > 280 or snake.cobra[0].ycor() < -280
+    if verificacao_da_colisao:
+        color("white")
+        write(f"GAME OVER ",align="center",font=("Arial",25,"normal"))
+        break
 
 
 
