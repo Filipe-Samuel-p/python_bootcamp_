@@ -25,6 +25,7 @@ class Cobra():
             x -= 10
             self.cobra.append(snake)
 
+
     def movimento_da_cobra(self):
         for i in range(len(self.cobra)-1,0,-1):
             novo_x = self.cobra[i-1].xcor()
