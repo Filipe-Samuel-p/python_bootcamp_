@@ -1,1 +1,1 @@
-<tittle> SNAKE GAME </title>
+<h1> SNAKE GAME </h1>
