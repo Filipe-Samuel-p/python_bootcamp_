@@ -5,14 +5,11 @@ DOWN = 270
 LEFT = 180
 RIGHT = 0
 
-
-
 class Cobra():
 
     def __init__(self) -> None:
         self.cobra = []
         self.criacao_da_cobra
-        
         
     def criacao_da_cobra(self):
         x=0
